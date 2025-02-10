@@ -20,9 +20,5 @@ import userRouter from "./routes/user.routes.js";
 //routes declaration
 app.use("/api/v1/users", userRouter)
 
-app.get("/insta", (req,res) => {
-    res.send("hello lokesh")
-})
-
 // http://localhost:3000/api/v1/users
 export {app}
