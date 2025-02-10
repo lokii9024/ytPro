@@ -1,9 +1,9 @@
 import dotenv from "dotenv"
-import express from 'express'
 import connectDB from "./db/db_connect.js"
+import { app } from "./app.js"
 
 dotenv.config({
-    path: "./env"
+    path: "./.env"
 })
 
 connectDB()
@@ -19,5 +19,4 @@ connectDB()
     console.log("MONGODB connection error !!! : ",err)
 })
 
-const app = express()
 
